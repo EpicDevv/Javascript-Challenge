@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript on steroids</title>
+  </head>
+  <body>
+    <div class="container-1">
+      <h2>challenge 1: Your age in days</h2>
+      <div class="flexbox-container-1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">
+            click me
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset()">reset</button>
+        </div>
+      </div>
+      <div class="flexbox-container-1">
+        <div id="flex-box-result"></div>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <h2>challenge: 2 cat generator</h2>
+      <button class="btn btn-success" id="cat-gen-btn" onclick="generateCat()">
+        gernerate cat
+      </button>
+    </div>
+    <div class="flex-box-container-2" id="flex-cat-gen"></div>
+
+<div class="container-3">
+    <h2>Challenge: 3 Rock Paper Scissors</h2>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id="rock" src="https://w7.pngwing.com/pngs/527/386/png-transparent-drawing-rock-boulder-stone-furniture-photography-grass.png" alt="rock" height="150" width="150" onclick="rpsGame(this)">
+        <img id="paper" src="https://www.pngfind.com/pngs/m/177-1777588_looseleaf-paper-loose-leaf-paper-drawing-hd-png.png" alt="paper" height="150" width="150" onclick="rpsGame(this)">
+        <img id="scissors" src="https://freepngimg.com/download/scissors/14-orange-scissors-png-image-download.png" alt="scissors" height="150" width="150" onclick="rpsGame(this)">
+
+    </div>
+</div>
+
+<div class="container-4">
+<h2 id="change-my-color">Challenge 4: change the color of all buttons</h2>
+  <div class="flex-box-pick-color">
+    <form action="">
+      <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+        <option value="random">random</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="reset">reset</option>
+      </select>
+    </form>
+    <button class="btn btn-primary">facebook</button>
+    <button class="btn btn-danger">yahoo</button>
+    <button class="btn btn-warning">wee</button>
+    <button class="btn btn-success">google</button>
+  
+  </div>
+</div>
+
+<div class="container-5">
+  <h2>challenge 5: black Jack</h2>
+  <h3><span id="blackjack-result">lets play!</span></h3>
+  <div class="flex-blackjack-row-1">
+    <div id="your-box">
+      <h2>you: <span id="your-blackjack-result">0</span></h2>
+    </div>
+      
+    <div id="dealer-box">
+      <h2>dealer: <span id="dealer-blackjack-result">0</span></h2>
+    </div>
+
+  </div>
+
+  <div class="flex-blackjack-row-2">
+    <div>
+      <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">HIT</button>
+      <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">STAND</button>
+      <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+    </div>
+  </div>
+
+  <div class="flex-blackjack-row-3">
+    <table>
+      <tr>
+        <th>wins</th>
+        <th>losses</th>
+        <th>draws</th>
+      </tr>
+      <tr>
+        <td><span id="wins">0</span></td>
+        <td><span id="losses">0</span></td>
+        <td><span id="draws">0</span></td>
+        
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 50px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.container-5 {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.flexbox-container-1,
+.flex-box-rps,
+.flex-box-pick-color,
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2 {
+  background: url("https://media.istockphoto.com/vectors/black-jack-table-vector-illustration-eps-10-casino-illustration-vector-id1149059294?k=20&m=1149059294&s=612x612&w=0&h=iIdyCd52aUtArDjQOQJKIJW9me20sKrsxyWsF6NZn7Q=");
+  color: #ffffff;
+}
+
+.flex-blackjack-row-1 div {
+  border: 1px solid black;
+  padding: 10px;
+  height: 350px;
+  text-align: center;
+  flex: 1;
+}
+
+.flex-blackjack-row-1 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.flex-blackjack-row-2 div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table,
+th,
+td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.flexbox-container-1 div {
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.container-2 {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+
+.flex-box-container-2 {
+  display: flex;
+  border: 1px solid blue;
+  width: 75%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.flex-box-container-2 img {
+  /* border: 3px solid green; */
+  /* padding: 10px; */
+  margin: 30px;
+  width: 200px;
+  height: auto;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+.flex-box-rps img:hover {
+  box-shadow: 0px 10px 50px rgba(0, 238, 255, 0.719);
+}
